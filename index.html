@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EASYMAKEMONEY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/fv.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/newfont.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-version.css">
+
+    <style>
+        body {
+
+            background-image: url("71.jpg");
+
+        }
+
+        .lotie {
+            width: 100px;
+            height: 50px;
+
+        }
+
+
+
+        div.principale {
+            position: relative;
+            border-radius: 15%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+            min-width: 1000px;
+            padding-bottom: opx;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.bouton {
+            /* background-color: white; */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: white;
+            border-radius: 15%;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        div.bouton:hover {
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15%;
+            cursor: pointer;
+            transform: translateY(-30px);
+            transition: transform 500ms ease-out 200ms;
+            background: linear-gradient(45deg, #97a1ac, #99bdec)
+        }
+
+        div.boutonHaut:hover {
+            display: inline-block;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15%;
+            cursor: pointer;
+            transform: translateY(-30px);
+            transition: transform 500ms ease-out 200ms;
+            background: linear-gradient(45deg, #97a1ac, #99bdec)
+        }
+
+        div.boutonHaut {
+
+            /* background-color:white; */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border: white;
+            border-radius: 15%;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);
+
+        }
+
+        p.titreBouton {
+
+            color: black;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            font-size: 10px;
+            padding: 5px;
+
+        }
+
+        div.divVerticale {
+
+            display: inline-block;
+        }
+
+        div.smartphone {
+            display: inline-block;
+            padding: 15px;
+            width: 100%;
+            height: 570px;
+            border-radius: 30px 30px 10px 10px;
+            background-image: linear-gradient(-38deg, #67696b 0%, #040404 100%);
+            margin-bottom: 60px;
+        }
+
+        div.premier {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border-radius: 15px;
+        }
+
+        div.second {
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            height: auto;
+        }
+
+
+        div.card {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+
+
+        div.tierce {
+            position: right;
+            display: inline-block;
+            width: auto;
+            margin: 0px;
+        }
+
+
+
+        lottie-player.lotie {
+            margin: 0px;
+            border-radius: 15%;
+
+        }
+
+        img.logo {
+            position: absolute;
+            top: 0px;
+            left: 90%;
+
+        }
+
+        button.bouton {
+            outline: none;
+            border: none;
+            background-color: transparent;
+
+        }
+
+
+
+        div.card2 {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.05),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        ul.menu2002 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        ul.menu2002 li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        ul.menu2002 li a {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: #171515;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #666;
+            transition: .5s;
+        }
+
+        iframe#video {
+            width: 100%;
+            height: 450px;
+            border-radius: 5%;
+
+        }
+
+        ul.menu2002 li a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #d35400;
+            transition: .5s;
+            transform: scale(.9);
+            z-index: -1;
+        }
+
+        ul.menu2002 li a:hover:before {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px #d35400;
+            filter: blur(3px);
+        }
+
+        ul.menu2002 li a:hover {
+            color: #ffa502;
+            box-shadow: 0 0 15px #d35400;
+            text-shadow: 0 0 15px #d35400;
+        }
+
+        iframe#video1 {
+            width: 600px;
+            height: 500px;
+            border-radius: 5%;
+        }
+
+        .fontsize {
+            font-size: 30px;
+        }
+
+        .structure {
+            max-height: 1000px;
+        }
+
+        .marginDownload {
+            margin: 30px 0px 30px 0px;
+        }
+
+        .tailleImage {
+            height: 460px;
+        }
+
+
+        @media only screen and (max-width: 1637px) {
+            iframe#video1 {
+                width: 560px;
+                height: 460px;
+            }
+        }
+
+        @media only screen and (max-width: 1485px) {
+            .lotie {
+                width: 90px;
+                height: 40px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1485px) {
+            .lotie {
+                width: 80px;
+                height: 35px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1219px) {
+            .lotie {
+                width: 70px;
+                height: 30px;
+
+            }
+        }
+
+        @media only screen and (max-width: 1219px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .taille {
+                height: 140px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 56px;
+            }
+        }
+
+        @media only screen and (max-width: 1163px) {
+            iframe#video1 {
+                width: 460px;
+                height: 360px;
+            }
+
+            .fontsize {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 80%;
+
+            }
+
+            .divSecond {
+                width: 80%;
+
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 90%;
+
+            }
+
+            .divSecond {
+                width: 90%;
+
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .lotie {
+                width: 60px;
+                height: 25px;
+
+            }
+
+            .divPremier {
+                width: 90%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .divSecond {
+                width: 90%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            div.principale {
+                min-width: 100%;
+            }
+
+            .tailleImage {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 823px) {
+            .fontsize {
+                font-size: 15px;
+            }
+
+        }
+
+        @media only screen and (max-width: 723px) {
+            .taille {
+                height: 100px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media only screen and (max-width: 613px) {
+            iframe#video1 {
+                width: 360px;
+                height: 260px;
+            }
+
+            .fontsize {
+                font-size: 10px;
+            }
+        }
+
+
+        @media only screen and (max-width: 400px) {
+            .taille {
+                height: 70px;
+            }
+
+            .eight-banner-section .eight-banner-content h1 {
+                font-size: 26px;
+            }
+
+            .fontsize {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body class="app-eight-home dark-version" data-spy="scroll" data-target=".navigation-eight" data-offset="50">
+    <!-- preloader - start -->
+    <div id="preloader" class="ei-preloader"></div>
+    <div class="ei-up">
+        <a href="#" id="scrollup" class="ei-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <!-- Start of header section
+        ============================================= -->
+    <header id="header-eight" class="main-header-eight">
+        <div class="appheader-content">
+            <div class="site-logo float-left">
+                <a href="#"><img src="logo.png" alt=""></a>
+            </div>
+            <!-- <nav class="navigation-eight ul-li">
+                <ul>
+                    <li><a class="nav-link" href="#eight-banner">Home</a></li>
+                    <li><a class="nav-link" href="#feature-eight">Features</a></li>
+                    <li><a class="nav-link" href="#eight-service">Showcase</a></li>
+                    <li><a class="nav-link" href="#ei-team">Team</a></li>
+                    <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+                    <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+                </ul>
+            </nav> -->
+            <nav class="navigation-eight ul-li">
+                <ul>
+                    <li class="nav-link"><a href="#eight-banner"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li class="nav-link"><a href="#ei-screenshots"><i class="fa fa-file-image-o"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#featured_service"><i class="fa fa-thumbs-up"
+                                aria-hidden="true"></i></a></li>
+                    <li class="nav-link"><a href="#pm-feature-2"><i class="fa fa-sliders" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#eg-how-work"><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#settings-easy"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-link"><a href="#pm-testimonial"><i class="fas fa-users" aria-hidden="true"></i></a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+
+            <div class="h-eight-social ul-li float-right clearfix">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <!-- <div class="sign-up-btn-eight text-center float-right clearfix">
+                <a href="#">sign In</a>
+            </div> -->
+        </div>
+        <!-- /desktop-menu -->
+        <div class="appi-ei-mobile_menu relative-position">
+            <div class="appi-ei-mobile_menu_button appi-ei-open_mobile_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="appi-ei-mobile_menu_wrap">
+                <div class="mobile_menu_overlay appi-ei-open_mobile_menu"></div>
+                <div class="appi-ei-mobile_menu_content">
+                    <div class="appi-ei-mobile_menu_close appi-ei-open_mobile_menu">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="m-brand-logo text-center">
+                        <img src="logo.png" alt="">
+                    </div>
+
+
+                    <nav class="appi-ei-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li class="nav-link"><a href="#eight-banner"><i class="fa fa-home"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#ei-screenshots"><i class="fa fa-file-image-o"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-link"><a href="#featured_service"><i class="fa fa-thumbs-up"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#pm-feature-2"><i class="fa fa-sliders"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#eg-how-work"><i class="fa fa-calculator"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#settings-easy"><i class="fa fa-cogs"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="nav-link"><a href="#pm-testimonial"><i class="fas fa-users"
+                                        aria-hidden="true"></i></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- <nav class="appi-ei-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+                            <li><a class="nav-link" href="#eight-banner">Home</a></li>
+                            <li><a class="nav-link" href="#feature-eight">Features</a></li>
+                            <li><a class="nav-link" href="#eight-service">Showcase</a></li>
+                            <li><a class="nav-link" href="#ei-team">Team</a></li>
+                            <li><a class="nav-link" href="#ei-faq">FAQ</a></li>
+                            <li><a class="nav-link" href="#ei-screenshots">Screenshots</a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </div>
+        </div>
+        <!-- /mobile-menu -->
+    </header>
+    <!-- End of header section
+        ============================================= -->
+
+
+    <!-- Start of Banner section
+        ============================================= -->
+    <section id="eight-banner" class="eight-banner-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="eight-banner-content">
+                        <div class="banner-content-box appeight-headline pera-content">
+                            <div class="taille">
+                                <h1 class="cd-headline clip is-full-width">
+                                    EASYMAKEMONEY <br>
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">49.99 € A VIE</b>
+                                        <b>Offre de lancement</b>
+
+                                    </span>
+                                </h1>
+                                <P>au lieu de 19.99€/mois</P>
+
+                                <div class="download-btn marginDownload">
+                                    <a href="https://apps.apple.com/us/app/easymakemoney/id1590697726"><img
+                                            src="app1.png" alt=""></a>
+                                    <a href="#"><img src="gp1.png" alt=""></a>
+                                </div>
+
+                                <div class="ei-banner-review pera-content ul-li">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <p>(+ de 13500 <span>utilisateurs</span> satisfaits)</p>
+                                </div>
+                            </div>
+                            <div class="ei-banner-mbl-mockup wow fadeInRight" data-wow-delay="600ms"
+                                data-wow-duration="1500ms">
+                                <img class="tailleImage" src="presentetion.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                    <div class="wave waveTop" style="background-image: url('dw1.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                    <div class="wave waveMiddle" style="background-image: url('dw2.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                    <div class="wave waveBottom" style="background-image: url('dw3.png')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Banner section
+        ============================================= -->
+
+    <!-- Start of screen-shoot section
+        ============================================= -->
+    <section id="ei-screenshots" class="ei-screenshots-section position-relative">
+        <div class="container">
+            <div class="eight-section-title appeight-headline pera-content text-center">
+                <span class="eg-title-tag"> App screenshots <i class="square-shape">
+                        <i></i><i></i><i></i><i></i></i></span>
+                <h2 style="color: #a68408;">Les screenshots d'une App
+                    <span> pour connaître ses propriétés sont importantes avant de l’acheter !</span>
+                </h2>
+                <p style="color: #a68408;">Vous pouvez découvrir les nombreuses fonctionnalités qu'offre EASYMAKEMONEY
+                </p>
+            </div>
+            <!-- /title -->
+
+            <div class="row ei-appScreenshotCarousel-container swiper-container">
+                <div class="ei-screen-mobile-image"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/1.png)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/2.png)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/3.png)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/7.png)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/4.png)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/5.png)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/6.png)">
+                    </div>
+
+
+
+                    <!-- <div class="swiper-slide"
+                        style="background-image:url(assets/img/app-landing/screenshoot/search.png)"></div> -->
+                    <div class="swiper-slide" style="background-image:url(images/8.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/9.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/10.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/11.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/12.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/13.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(images/14.png)"></div>
+                </div>
+                <!-- Add Arrows -->
+            </div>
+            <!-- Navigations -->
+            <div class="banner-navigation">
+                <div class="swiper-button-prev"><span class="fas fa-chevron-left"></span></div>
+                <div class="swiper-button-next"><span class="fas fa-chevron-right"></span></div>
+            </div>
+        </div>
+        <!-- <div class="screenshoot-vector screenshoot-shape1 position-absolute"> <img
+                src="assets/img/app-landing/shape/ss-shape1.png" alt=""></div>
+        <div class="screenshoot-vector screenshoot-shape2 position-absolute"> <img
+                src="assets/img/app-landing/shape/ss-shape2.png" alt=""></div> -->
+    </section>
+    <!-- End of screen-shoot section
+        ============================================= -->
+
+    <!-- Start of featured service section
+        ============================================= -->
+    <section id="featured_service" class="featured_service_section relative-position">
+        <div class="container">
+            <div class="section_title text-center">
+                <div class="title_tag">
+                    <div class="tag_icon float-left">
+                        <i class="flaticon-diamond"></i>
+                    </div>
+                    Fonctionnalités
+                </div>
+                <div class="section_title_text saas-modern-headline pera-content">
+                    <h2>Pourquoi choisir <span>notre application?</span></h2>
+                    <p>Sa fonction première est d'aider les PME et PMI dans le secteur de prêt-à-porter à avoir une
+                        vision rapide et claire de leurs dépenses et de leurs investissements.</p>
+                </div>
+            </div>
+            <!-- /section-title -->
+            <div id="featured_scroll" class="featured_content clearfix">
+                <ul>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-usd"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Gestion de votre budget</h3>
+                                <p>Trop de fois vous avez été confronté à la dure réalité financière après un
+                                    investissement ou un voyage d'affaire.
+
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-cubes"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>SAAS</h3>
+                                <p>Toutes ces données réunies dans une seule application, EASYMAKEMONEY sera très vite
+                                    votre partenaire indispensable.
+
+
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contact Us</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-pencil-square-o"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Gestion de vos notes de frais</h3>
+                                <p>Vision rapide de tous vos frais impactants votre budget global.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-plane"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Séjour tranquille</h3>
+                                <p>Budgétisez et maîtrisez vos coûts.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-bar-chart"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Inventaire</h3>
+                                <p>Visualisation des caractéristiques et du nombre de vos produits en live.</p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="flaticon-analytics"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Branding</h3>
+                                <p>Make sure your brand assets contribute to your company’s personality and reputation.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contact Us</a>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-th-list"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Fournisseurs</h3>
+                                <p>Gérez et listez vos informations fournisseurs.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Géolocalisation de vos fournisseurs</h3>
+                                <p>Géolocalisez vos fournisseurs en live.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Commandes</h3>
+                                <p>Gestions et suivis de vos commandes en temps réel.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-ship"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Shipping</h3>
+                                <p>Suivi du shipping de vos colis en temps réel.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Simulateur</h3>
+                                <p>Simuler votre budget global et prévoir les bénéfices après avoir déduit les futurs
+                                    frais engagés.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="featured_icon_text text-center relative-position">
+                            <div class="featured_icon relative-position text-center">
+                                <i class="fa fa-calculator"></i>
+                            </div>
+                            <div class="featured_text saas-modern-headline">
+                                <h3>Calculateur</h3>
+                                <p>Calculateur intégré de prix avec option multi devises.
+                                </p>
+                            </div>
+                            <div class="feature_btn">
+                                <a href="!#">Contactez nous</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line_animation">
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+            <div class="line_area"></div>
+        </div>
+    </section>
+    <!-- End of featured service section
+        ============================================= -->
+    <!-- Start of feature 2 section
+        ============================================= -->
+    <section id="pm-feature-2" class="pm-feature-section-2">
+        <div class="pm-feature-content-2">
+            <div class="container">
+                <div class="pm-feature-process position-relative">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pm-feature-item2">
+                                <div class="pm-section-title pm-headline">
+                                    <span class="pm-title-tag"></span><br>
+                                    <h2>Un voyage d'affaire chez vos fournisseurs?</h2>
+                                </div>
+                                <div class="pm-feature-item-details">
+                                    Votre partenaire EASYMAKEMONEY pour vous assister.
+
+                                </div>
+                                <div class="pm-feature-process-list">
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Budgétisez et maitrisez vos coûts
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-desktop"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Séjour tranquille
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Inventaire et visualisation en live de vos produits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pm-f-process-img position-absolute wow fadeInRight " data-wow-delay="0ms"
+                            data-wow-duration="1500ms">
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/vHa_xPsRGCA
+                            " accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <!-- <img src="assets/img/hrm/feature/fp1.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pm-feature-content-2">
+            <div class="container">
+                <div class="pm-feature-process position-relative">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pm-feature-item2">
+                                <div class="pm-section-title pm-headline">
+                                    <span class="pm-title-tag"></span>
+                                    <h2>Gestionnaire de fournisseurs</h2>
+                                </div>
+                                <div class="pm-feature-item-details">
+                                    De multiple fonctionnalités pour une gestion optimale de vos fournisseurs.
+                                </div>
+                                <div class="pm-feature-process-list">
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Gérez et listez vos informations fournisseurs
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-desktop"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Détection automatisée de vos adresses fournisseurs
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Géolocalisation de vos fournisseurs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pm-f-process-img position-absolute wow fadeInLeft" data-wow-delay="0ms"
+                            data-wow-duration="1500ms">
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/qqcEEWlWGlg
+                            " accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <!-- <img src="assets/img/hrm/feature/fp2.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pm-feature-content-2">
+            <div class="container">
+                <div class="pm-feature-process position-relative">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pm-feature-item2">
+                                <div class="pm-section-title pm-headline">
+                                    <span class="pm-title-tag"></span>
+                                    <h2>Gestionnaire de commande</h2>
+                                </div>
+                                <div class="pm-feature-item-details">
+                                    Gestion et suivi de vos commandes en temps réel.
+                                </div>
+                                <div class="pm-feature-process-list">
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Suivi du shipping de vos colis en cours de livraison
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-desktop"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Scannez vos fatures
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Liste de vos livreurs et de vos numéros de suivi associés à vos commandes
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
+                            data-wow-duration="1500ms">
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/QVDiEpi8Ykw
+                            " accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pm-feature-content-2">
+            <div class="container">
+                <div class="pm-feature-process position-relative">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pm-feature-item2">
+                                <div class="pm-section-title pm-headline">
+                                    <span class="pm-title-tag"></span>
+                                    <h2>Gestionnaire de note de frais</h2>
+                                </div>
+                                <div class="pm-feature-item-details">
+                                    Suivi de l'ensemble de vos frais en temps réel, liés à votre voyage d'affaire en
+                                    cours.
+                                </div>
+                                <div class="pm-feature-process-list">
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Visualisation de vos frais en temps réel
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-desktop"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Scannez vos fatures
+                                        </div>
+                                    </div>
+                                    <div class="pm-feature-item-content wow fadeFromUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="pm-f-process-icon text-center float-left">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="pm-f-process-text">
+                                            Calcul de vos frais en temps réel
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pm-f-process-img position-absolute wow fadeInRight" data-wow-delay="0ms"
+                            data-wow-duration="1500ms">
+                            <iframe id="video1" border-radius=20px src="https://www.youtube.com/embed/ZvzTqe9QVC8
+                            " accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <!-- <img src="assets/img/hrm/feature/fp3.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of feature 2 section
+        ============================================= -->
+
+
+    <!-- Start of How work  section
+        ============================================= -->
+    <section id="eg-how-work" class="eg-how-work-section position-relative">
+        <div class="how-work-bg-shape position-absolute"><img src="hws.png" alt=""></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="ei-how-work-content-item wow fadeFromUp" data-wow-delay="300ms"
+                        data-wow-duration="1500ms">
+                        <div class="eight-section-title appeight-headline pera-content text-left">
+                            <span class="eg-title-tag">
+                                Un simulateur et un calculateur pour évaluer vos risques<i
+                                    class="square-shape"><i></i><i></i><i></i><i></i></i>
+                            </span>
+                            <h2> Budgétisez vos coûts en fonction des prévisions obtenues
+                                <span> EASYMAKEMONEY</span>
+                            </h2>
+                        </div>
+                        <!-- /title -->
+                        <div id="how-workscrollbar" class="how-work-scroller">
+                            <div class="eg-how-work-content">
+                                <div class="eg-how-work-icon-text position-relative">
+                                    <span class="scroller-no">1</span>
+                                    <div class="eg-how-work-icon float-left text-center">
+                                        <i class="flaticon-verified-user"></i>
+                                    </div>
+                                    <div class="eg-how-work-text appeight-headline pera-content">
+                                        <h3>Budgétisez vos coûts</h3>
+                                        <p>Budgétisez vos coûts en fonction de vos prévisions de resultats</p>
+                                    </div>
+                                </div>
+                                <div class="eg-how-work-icon-text position-relative">
+                                    <span class="scroller-no">2</span>
+                                    <div class="eg-how-work-icon float-left text-center">
+                                        <i class="flaticon-download"></i>
+                                    </div>
+                                    <div class="eg-how-work-text appeight-headline pera-content">
+                                        <h3>Évaluer vos bénéfices</h3>
+                                        <p>Une vision rapide et claire de vos bénéfices.</p>
+                                    </div>
+                                </div>
+                                <div class="eg-how-work-icon-text position-relative">
+                                    <span class="scroller-no">3</span>
+                                    <div class="eg-how-work-icon float-left text-center">
+                                        <i class="flaticon-corporate-identity"></i>
+                                    </div>
+                                    <div class="eg-how-work-text appeight-headline pera-content">
+                                        <h3> Évaluer vos prix </h3>
+                                        <p>Réajustez vos prix en temps réel en fonction de vos résultats.</p>
+                                    </div>
+                                </div>
+                                <div class="eg-how-work-icon-text position-relative">
+                                    <span class="scroller-no">4</span>
+                                    <div class="eg-how-work-icon float-left text-center">
+                                        <i class="flaticon-text"></i>
+                                    </div>
+                                    <div class="eg-how-work-text appeight-headline pera-content">
+                                        <h3>Calculateur de prix</h3>
+                                        <p>Calculez vos prix à tout moment dans toutes les devises majeures.</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="eg-how-work-icon-text position-relative">
+                                    <span class="scroller-no">5</span>
+                                    <div class="eg-how-work-icon float-left text-center">
+                                        <i class="flaticon-idea"></i>
+                                    </div>
+                                    <div class="eg-how-work-text appeight-headline pera-content">
+                                        <h3>Now Use It</h3>
+                                        <p>As a app web crawler expert, I help organizations adjusting.</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="how-work-mockup position-relative wow fadeFromUp" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="hw-mockup-img">
+                            <img src="hw.gif" alt="">
+                        </div>
+                        <div class="hw-shape1 position-absolute" data-parallax='{"x" : 40}'><img src="fc1.png" alt="">
+                        </div>
+                        <div class="hw-shape2 position-absolute" data-parallax='{"x" : -30}'><img src="fc2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End  of How work  section
+        ============================================= -->
+    <!-- structure section
+        ============================================= -->
+
+    <section id="pm-testimonial" class="pm-testimonial-section position-relative">
+        <div class="pm-testimonial-bg position-absolute text-center ">
+
+        </div>
+        <div class="container ">
+            <img src="easymakemoney structure.png" alt="">
+        </div>
+        </div>
+    </section>
+    <!-- End structure section
+        ============================================= -->
+
+
+    <!-- Start of testimonial  section
+        ============================================= -->
+    <section id="pm-testimonial" class="pm-testimonial-section position-relative">
+        <div class="pm-testimonial-bg position-absolute text-center"> <img src="fond.jpg" alt=""></div>
+        <div class="container">
+            <div class="pm-testimonial-content">
+                <div class="row">
+                    <div class="col-md-4 wow fadeFromLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="pm-testimonial-inner">
+                            <div class="pm-testimonial-text">
+                                PLusieurs applications en une seule, je ne démare pas une collection sans le conseil
+                                d'EASYMAKEMONEY
+                            </div>
+                            <div class="pm-testimonial-author">
+                                <div class="pm-testimonial-img float-left">
+                                    <img src="visage1.jpg" alt="">
+                                </div>
+                                <div class="pm-author-text pm-headline ul-li">
+                                    <h3>Hilix B. Browni</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pm-testimonial-inner">
+                            <div class="pm-testimonial-text">
+                                Un service après-vente efficace, Une documentation fournie, vraiment extraordinaire
+                                l'équipe EASYMAKEMONEY.
+                            </div>
+                            <div class="pm-testimonial-author">
+                                <div class="pm-testimonial-img float-left">
+                                    <img src="visage2.jpg" alt="">
+                                </div>
+                                <div class="pm-author-text pm-headline ul-li">
+                                    <h3>Hilix B. Browni</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeFromUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="pm-testimonial-text-item position-relative">
+                            <div class="pm-section-title pm-headline text-center">
+                                <span class="pm-title-tag">Avis</span>
+                                <h2>Que disent nos clients</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeFromRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="pm-testimonial-inner">
+                            <div class="pm-testimonial-text">
+                                Grâce à EAYMAKEMONEY je peux avoir une vision claire de mes investissements à court et
+                                moyen termes.
+                                C’est un outil indispensable pour tout entrepreneur qui souhaite avoir une vision rapide
+                                et claire de ses investissements.
+
+                            </div>
+                            <div class="pm-testimonial-author">
+                                <div class="pm-testimonial-img float-left">
+                                    <img src="visage3.jpg" alt="">
+                                </div>
+                                <div class="pm-author-text pm-headline ul-li">
+                                    <h3>Hilix B. Browni</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pm-testimonial-inner">
+                            <div class="pm-testimonial-text">
+                                Je vous le recommande, c'est un assistant précieux lors de mes déplacements d'affaire..
+                            </div>
+                            <div class="pm-testimonial-author">
+                                <div class="pm-testimonial-img float-left">
+                                    <img src="visage4.jpg" alt="">
+                                </div>
+                                <div class="pm-author-text pm-headline ul-li">
+                                    <h3>Hilix B. Browni</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testimonial  section
+        ============================================= -->
+
+    <!-- Start of newslatter  section
+            ============================================= -->
+    <section id="str-newslatter" class="str-newslatter-section">
+        <div class="container">
+            <div class="str-newslatter-content position-relative">
+                <div class="str-mail-icon position-absolute">
+                    <!-- <iframe width="956" height="453" border-radius=20px src="https://www.youtube.com/embed/kpSzK3u2gL4CE?autoplay=1&mute=1&loop=1&playlist=kpSzK3u2gL4
+                            " accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> -->
+                    <!-- <img src="assets/img/startup/icon/mail.png" alt=""> -->
+
+                </div>
+                <div class="str-newslatter-text str-headline pera-content text-center">
+                    <h2>NEWSLETTERS</h2>
+                    <p>Vous souhaitez recevoir des notifications d'emails sur l'évolution de nos applications et les
+                        nouveautés, laissez-nous votre email..
+                    </p>
+                </div>
+                <div class="str-newslatter-form position-relative">
+                    <form action="#">
+                        <input class="email" name="email" type="email" placeholder="Email">
+                        <div class="nws-button  text-capitalize">
+                            <button class="hover-btn" type="submit" value="Submit"> Souscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of newslatter  section
+                    ============================================= -->
+
+
+
+    <!-- Start of Footer  section
+        ============================================= -->
+    <section id="ei-footer" class="ei-footer-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget pera-content appeight-headline">
+                        <div class="ei-footer-logo">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <p>
+
+                        </p>
+                        <div class="ei-payment-mathod">
+                            <img src="paypal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget appeight-headline ul-li-block">
+                        <h3 class="ei-widget-title">Useful link:</h3>
+                        <ul>
+                            <li><a href="#">Menu</a></li>
+                            <!-- <li><a href="#">Team</a></li> -->
+                            <!-- <li><a href="#">Servce</a></li> -->
+                            <li><a href="#settings-easy">FAQ</a></li>
+                            <li><a href="CGU.html">À propos de nous</a></li>
+                            <!-- <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Testimonials</a></li> -->
+                            <li><a
+                                    href="mailto:michel.almont@gmail.com?subject=Contact%20depuis%20admin@easymakemoney.com">Contact</a>
+                            </li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ei-footer-widget appeight-headline  ul-li-block">
+                        <h3 class="ei-widget-title">Contact:</h3>
+                        <h4 style="color: #666;">
+                            <i" class="fa fa-envelope"></i>
+                                admin@easymakemoney.com
+
+                                <!-- <span>(Sat - Thursday)</span> -->
+                        </h4>
+                        <h4 style="margin-left: 10px;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <B></B>
+
+                            <span>2915 Ogletown Road, Newark, DE 19713 U.S.A.</span>
+                        </h4>
+                        <div class="download-btn">
+                            <a href="https://apps.apple.com/us/app/easymakemoney/id1590697726"><img src="app1.png"
+                                    alt=""></a>
+                            <a href="#"><img src="gp1.png" alt=""></a>
+                        </div>
+                        <div class="ei-footer-social">
+                            <a href="#"><i class="fab fa-facebook-f "></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ei-footer-copyright">
+            <div class="container">
+                <div class="ei-footer-copyright-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="ei-copyright-text">
+                                <p>© 2020 <a href="#">Themexriver</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="ei-copyright-menu">
+                                <a href="politiquedeconfidentialite.html">Politique de confidentialité</a>
+                                <a href="conditiongeneraldevente.html">Conditions général de vente</a>
+                                <a href="avisderesponsabilite.html">Avis de responsabilité </a>
+                                <a href="genrateurcluf.html">FAQ générateur de CLUF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ei-footer-shape1 position-absolute" data-parallax='{"x" : 60}'><img src="fo-shape1.png" alt="">
+        </div>
+        <div class="ei-footer-shape2 position-absolute" data-parallax='{"y" : 60}'><img src="fo-shape2.png" alt="">
+        </div>
+        <div class="ei-footer-shape3 position-absolute"><img src="eimap.png" alt=""></div>
+    </section>
+    <!-- End of Footer  section
+        ============================================= -->
+    <!-- Messenger Plug-in Discussion Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plug-in Discussion code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "100708798766091");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+        window.fwSettings = {
+            'widget_id': 80000004941
+        };
+        !function () { if ("function" != typeof window.FreshworksWidget) { var n = function () { n.q.push(arguments) }; n.q = [], window.FreshworksWidget = n } }()
+    </script>
+    <script type='text/javascript' src='https://euc-widget.freshworks.com/widgets/80000004941.js' async defer></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '833947414218226');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=833947414218226&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- JS library -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/pagenav.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/bxslider.js"></script>
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/typer-new.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
